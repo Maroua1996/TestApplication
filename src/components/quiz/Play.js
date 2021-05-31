@@ -374,7 +374,7 @@ numberOfQuestions: state.numberOfQuestions,
 numberOfAnsweredQuestions: state.numberOfQuestions -(state.correctAnswers + state.wrong),
 correctAnswers:state.correctAnswers,
 wrongAnswers: state.wrongAnswers,
-fiftyFiftyUSed :  2 - state.fiftyFifty,
+fiftyFiftyUSed :  3 - state.fiftyFifty,
 hintsUsed: 5 - state.hints
     };
     console.log(playerStats);
