@@ -1,0 +1,311 @@
+#home{
+
+    //background-image: url('../../assets/img/dd2c048d576ecf9d0bed68a7592e1eb5.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background :#3586ff;//linear-gradient(180deg,#04fafd 10%, #119dff 50%,#030423);
+  overflow: hidden;
+    backdrop-filter: blur(14px);
+    
+    
+
+    //bubble 
+ .div{
+     height: 60px;
+     width: 60px;
+     border: 2px solid rgba(255,255,255,0.7);
+     border-radius: 50px;
+     position: absolute;
+     top: 10%;
+     left: 10%;
+     animation: animate 4s linear infinite;
+
+
+
+ }
+.div .dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: rgba(255,255, 255, 0.5);
+    position: absolute;
+    top:20%;
+    right: 20%;
+
+}
+
+
+.div:nth-child(1){
+    top:20%;
+    left:20%;
+    animation: animate 8s linear infinite;
+}
+.div:nth-child(2){
+    top:60%;
+    left:80%;
+    animation: animate 10s linear infinite;
+}
+.div:nth-child(3){
+    top:40%;
+    left:40%;
+    animation: animate 5s linear infinite;
+}
+
+.div:nth-child(4){
+    top:66%;
+    left:30%;
+    animation: animate 7s linear infinite;
+}
+
+.div:nth-child(5){
+    top:90%;
+    left:10%;
+    animation: animate 9s linear infinite;
+}
+
+
+.div:nth-child(6){
+    top:30%;
+    left:60%;
+    animation: animate 5s linear infinite;
+}
+
+
+.div:nth-child(7){
+    top:70%;
+    left:20%;
+    animation: animate 8s linear infinite;
+}
+
+
+.div:nth-child(8){
+    top:75%;
+    left:60%;
+    animation: animate 10s linear infinite;
+}
+
+.div:nth-child(9){
+    top:50%;
+    left:50%;
+    animation: animate 6s linear infinite;
+}
+
+.div:nth-child(10){
+    top:45%;
+    left:20%;
+    animation: animate 10s linear infinite;
+}
+
+
+.div:nth-child(11){
+    top:10%;
+    left:90%;
+    animation: animate  9s linear infinite;
+}
+.div:nth-child(12){
+    top:20%;
+    left:70%;
+    animation: animate 7s linear infinite;
+}
+.div:nth-child(13){
+    top:20%;
+    left:20%;
+    animation: animate 8s linear infinite;
+}
+.div:nth-child(14){
+    top:60%;
+    left:5%;
+    animation: animate 6s linear infinite;
+}
+
+.div:nth-child(15){
+    top:90%;
+    left:80%;
+    animation: animate 9s linear infinite;
+    background: salmon;
+    backdrop-filter: blur(15px);
+
+}
+
+
+
+
+
+@keyframes animate {
+    0%{
+        transform: scale(0) translate(0) rotate(70deg);
+    }
+    100%{
+        transform: scale(1.3) translate(-100px) rotate(360deg);
+
+    }
+}
+
+
+
+ //fin bubble
+
+ 
+//fin vague
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 5px solid gray;
+     
+   
+      background:none;
+        padding-left: $md;
+        padding-right: $md;
+        height: 80%;
+       width: 35%;
+       border-radius: 55%;
+       margin-top: 4%;
+       
+    
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+  
+    .cube{
+        margin-top: 25px;
+        font-size: 5rem;
+        color: white;
+        text-align: center;
+
+    }
+    h5{
+        font-size: 2rem;
+        text-align: center;
+        color:$off-white;
+    }
+// premier bouton 
+    .play-button-container{
+        width: 100%;
+       
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+
+   
+    
+     
+
+    //test button 
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FDFDFD;
+  margin: 25px 0;
+}
+
+span.title {
+  margin: 0 auto;
+  color: #BBB;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
+  text-align: center;
+  display: block;
+}
+
+ .swiggleBox,  a.play-button, .auth-container {
+     background: white;
+  width: 130px;
+  height: 85px;
+  margin: 15px auto;
+  color: #4274D3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.78rem;
+  line-height: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+svg rect, svg path, svg polyline {
+  fill: none;
+  stroke: #4274D3;
+  stroke-width: 1;
+}
+
+ a.play-button:hover, .auth-container:hover ,.swiggleBox:hover svg path {
+  stroke: #4274D3;
+}
+
+
+/* Swiggle Box */
+svg path {
+  stroke-dasharray: 265, 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.swiggleBox:hover svg path {
+  stroke-width: 3;
+  stroke-dasharray: 0, 350;
+  stroke-dashoffset: 20;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+
+
+ 
+    //fin du test button
+    
+    
+  
+}
+   
+
+
+//media 
+
+@media(max-width:1024px){
+
+    #home section{
+         width: 60%;
+        height: 100%;
+
+
+
+}}
+
+
+@media(max-width:780px) {
+    #home section{
+        padding: 0 $noraml;
+        width: 100%;
+        height: 100%;
+        border-radius:0%;
+        
+    }
+    #home .div{
+    display: none;
+    }
+
+
+}

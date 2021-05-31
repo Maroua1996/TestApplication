@@ -1,0 +1,45 @@
+[
+    {
+        "question": "Que signifie zhillie?",
+        "optionA": "Cheval",
+        "optionB": "Partons manger",
+        "optionC": "un conseil",
+        "optionD": "beau temps",
+        "answer": "un conseil"
+    },
+
+    {
+        "question": "Comment dit-on fou?",
+        "optionA": "koalak",
+        "optionB": "yofi",
+        "optionC": "zheana",
+        "optionD": "vatterat",
+        "answer": "yofi"
+    },
+
+    {
+        "question": "calculer la somme de 7 et 10 :",
+        "optionA": "akat dalen ma torken ma chisen ma atk",
+        "optionB": "yor",
+        "optionC": "chakat ma at",
+        "optionD": "fekhken",
+        "answer": "fekhken"
+    },
+    {
+        "question": " Traduisez la phrase suivante : Anna's a zheana asshekh",
+        "optionA": "Il fait beau aujourd'hui",
+        "optionB": " Va't'en",
+        "optionC": "Regarde par là",
+        "optionD": "A demain ",
+        "answer": "Il fait beau aujourd'hui"
+    },
+    {
+        "question": " Traduisez la phrase suivante :Trois gros rats gris dans trois gros trous ronds rongent trois gros croûtons ronds",
+        "optionA": "A vorsaska asshekh, vorsaska night, vorsaska month  ",
+        "optionB": " Mawizzi",
+        "optionC": "Anha ven to eat chocolate ei asshekh  ",
+        "optionD": "Sen zhokwa shiqeth rats she sen zhokwa fir holes gnaw she sen zhokwa fir havon ",
+        "answer": "Il fait beau aujourd'hui"
+    }
+
+]

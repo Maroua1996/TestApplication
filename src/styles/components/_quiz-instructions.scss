@@ -1,0 +1,106 @@
+
+
+.instructions{
+    border: 1px solid darken($off-white, 10%);
+    border-radius: 5px;
+    margin-top: $lg;
+    margin-bottom: $lg;
+    padding: $sm $lg;
+   background:  url('../../assets/img/answer.gif');
+background-attachment: fixed
+; background-size: cover;
+object-fit: cover;
+
+
+    h1{
+        color : black;
+        font-size: 55px;
+        text-align:center;
+    }
+
+    p{
+        font-size: 25px;
+        font-weight: 500;
+        color : white;
+
+    }
+
+    .lifeline{
+        position:relative;
+        top:-3px;
+    }
+
+    .lifeline-icon{
+        color:$green;
+        cursor:pointer;
+
+    }
+
+
+
+    table{
+         background: white;
+        
+
+       };
+    .bowser-default{
+
+        border: 5px solid blue;
+        background: white;
+        padding-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    img{
+        width: 80%;
+        height: 50%;
+    }
+
+
+
+    .button
+    {
+        border: darkgoldenrod solid 6px;
+      margin-top:15px;
+    height: 130px;
+    margin-left: 55px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    }
+
+    .left a{
+        color: white;
+        font-size: 35px;
+        margin-bottom: 2px;
+    }
+    .left a:hover{
+        color: darken(white,10%);
+    }
+
+    .right a{
+        color: white;
+        font-size: 35px;
+        margin-bottom: 2px;
+    }
+    .right a:hover{
+        color: darken(blue,10%);
+    }
+
+
+}
+
+@media(max-width: $md-breakpoint){
+    .instructions{
+        background-attachment: fixed
+        ; background-size: 100% no-repeat;
+        object-fit: cover;
+    }
+    .instructions img{
+        width: 100% !important;
+        height: 150% !important;
+    }
+}
