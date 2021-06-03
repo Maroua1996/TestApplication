@@ -12,6 +12,21 @@ body {
     color: #ffffff;
   }
   
+
+  body{
+    background: url('../../assets/img/wave.gif') no-repeat;
+
+      
+    background-size: cover;
+   
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+  
   body {
   
     background-size: cover;

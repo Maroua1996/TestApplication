@@ -7,7 +7,18 @@ import correctNotification from '../../assets/audio/correct-answer.mp3';
 import wrongNotification from '../../assets/audio/wrong-answer.mp3';
 import buttonSound from '../../assets/audio/button-sound.mp3';
 import classNames from 'classnames';
+import  '../../assets/img/wave.gif';
 
+
+
+
+const myImage = `url('../../assets/img/wave.gif')`;
+
+const styles = {
+    backgroundImage: `url(${myImage})`,
+    backgroundSize: 'cover' }
+
+   
 
 class Play extends Component{
 constructor(props){
@@ -383,9 +394,13 @@ hintsUsed: 5 - state.hints
     },1000);
 }
 
+
+
 // rendue
 
     render(){
+      
+
         const {
             currentQuestion,
             currentQuestionIndex,
@@ -394,9 +409,11 @@ hintsUsed: 5 - state.hints
             numberOfQuestions,
         time} = this.state;
       
+          document.body.id = 'newID';
+        document.body.style.backgroundImage= styles ;
+        document.body.dataset.someDataAttr = 'someValue';
         return(
         <Fragment>
-
 
             
   <Helmet><title>Quiz page</title></Helmet>
@@ -470,3 +487,5 @@ id="quit-button"
 
 
 export default Play;
+
+
