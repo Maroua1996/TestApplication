@@ -1,6 +1,23 @@
 import React,{Component} from 'react';
 import { Helmet } from 'react-helmet';
 import {Link} from 'react-router-dom';
+import boo from '../../assets/img/boo.gif';
+
+import answer from '../../assets/img/answer.gif';
+import unpetiteffort from '../../assets/img/unpetiteffort.webp';
+import options from '../../assets/img/options.gif';
+import yatta from '../../assets/img/Yatta.gif'
+
+const images = [
+    { id: 1, src: '../../assets/img/answer.gif', title: 'foo', description: 'bar' },
+    { id: 2, src: '../../assets/img/answer.gif', title: 'foo', description: 'bar' },
+    { id: 3, src: '../../assets/img/hints.gif', title: 'foo', description: 'bar' },
+    { id: 4, src: '../../assets/img/options.gif', title: 'foo', description: 'bar' },
+    { id: 5, src: '../../assets/img/fiftyFifty.gif', title: 'foo', description: 'bar' },
+   
+  ];
+  
+
 
 
 class QuizSummary extends React.Component {
@@ -29,32 +46,46 @@ class QuizSummary extends React.Component {
     }
 render(){
     const {state, score} = this.props.location;
-    let stats, remark;
+    let stats, remark,img;
     const userscore = this.state.score;
     if(userscore <= 30){
-        remark = 'Aie... il faut plus pratiquer...';}
-
+        remark = 'Aie... il faut plus pratiquer...';
+        img = boo;
+    }
         else{ 
     if(userscore > 30 && userscore <= 50){
         remark = 'Mouaip... peu faire mieux,non ?';
+        img = answer;
     }else if(userscore <= 70 && userscore > 50){
         remark = 'Vous y étez presque ! encore un petit effort! ';
+        img = unpetiteffort;
     }
     else if(userscore >= 71 && userscore > 84){
         remark = 'Bien joué ! Presque un sans faute!!';
+        img = options;
     }else{
-        remark = "BRAVO ! "
+        remark = "BRAVO ! ";
+        img = yatta ;
     }}
         
         if(state !== undefined){
 stats = ( <> 
 <div> 
-    <span className="mdi mdi-check-circle-outline success-icon"></span>
+    
     </div>
+  <div className="r"> 
     <h1>Fin du Quizz</h1>
-    <div className="container">
-        <h4>{remark}</h4>
-        <h2>Ton score est de {this.state.score.toFixed(0)}&#37;</h2>
+    </div>
+    <div className="container v">
+    <div className="t"> 
+    
+    <h2>Ton score est de {this.state.score.toFixed(0)}&#37;</h2>
+    <img src={img} alt="Logo" />
+    <h4>{remark}</h4>
+       
+        </div>
+      
+        <div class="f">
         <span className="stat left">Nombre total de questions : </span>
         <span className="right">{this.state.numberOfQuestions}</span><br>
         </br>
@@ -67,8 +98,9 @@ stats = ( <>
         <span className="stat left">Nombre total de mauvaise reponses : </span>
         <span className="right">{this.state.wrongAnswers}</span><br>
         </br> 
+        </div>
     </div>
-    <section>
+    <section className="texte">
         <ul>
 <li>
     <Link to ="/">

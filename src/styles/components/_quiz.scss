@@ -5,6 +5,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  
   }
   * {
     font-family: "Verdana", cursive, sans-serif;
@@ -12,7 +13,10 @@ body {
   }
   
   body {
-    background-color: #7cc6fe;
+  
+    background-size: cover;
+   
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,3 +114,33 @@ body {
   }
   
  
+
+
+  @media(max-width:780px) {
+    .questions {
+    height: 100%;
+    width: 100%;
+
+    }
+
+.button-container{
+  height: 100%;
+    width: 100%;
+
+}
+
+.option{
+  height: 100%;
+  width: 100%;
+
+}
+
+.options-container {
+  height: 100%;
+  width: 100%;
+}
+
+ .timer-container{
+ height: 100%;
+  width: 100%;
+  }}

@@ -126,7 +126,7 @@
     top:90%;
     left:80%;
     animation: animate 9s linear infinite;
-    background: salmon;
+    
     backdrop-filter: blur(15px);
 
 }
@@ -156,7 +156,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border: 5px solid gray;
+        
      
    
       background:none;
@@ -166,9 +166,10 @@
        width: 35%;
        border-radius: 55%;
        margin-top: 4%;
-       
-    
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    //  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+       box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    //  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        //  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
   
@@ -296,16 +297,130 @@ svg path {
 
 
 @media(max-width:780px) {
+    #home{
+        padding: 0 $noraml;
+      
+       
+    
+    }
     #home section{
         padding: 0 $noraml;
         width: 100%;
         height: 100%;
         border-radius:0%;
-        
+        border : none;
+        background-color: white;
+        color: #4274D3;
     }
     #home .div{
     display: none;
+    color: #4274D3;
+    
+    }
+    #home .cube{
+        color: #4274D3;
+       
+        margin-bottom: 10px;
+
+    }
+    #home h5{
+        font-size: 30px;
+        color: #4274D3;
+        margin-top: 100px ;
+        margin-bottom: 50px ;
+    }
+    
+
+    
+
+
+}
+
+@media(max-width:760px){
+
+    #home .cube{
+        color: #4274D3;
+    font-size: 100px;
+        
+    
+        margin-bottom: 20px;
+
+    }
+    #home h5{
+        font-size: 20px;
+        color: #4274D3;
+        margin-top: 50px ;
+        margin-bottom: 50px ;
+    }
+    
+
+}
+
+
+
+@media(max-width:660px){
+
+    #home .cube{
+        color: #4274D3;
+font-size: 50px;
+        
+    
+        margin-bottom: 20px;
+
+    }
+    #home h5{
+        font-size: 20px;
+        color: #4274D3;
+        margin-top: 50px ;
+        margin-bottom: 50px ;
+    }
+    
+    
+
+}
+
+
+@media(max-width:560px){
+
+    #home .cube{
+        color: #4274D3;
+font-size: 50px;
+        
+    
+        margin-bottom: 20px;
+
+    }
+    #home h5{
+        font-size: 20px;
+        color: #4274D3;
+        margin-top: 50px ;
+        margin-bottom: 50px ;
+    }
+    
+    
+
+}
+
+
+
+
+@media(max-width:460px){
+
+    #home .cube{
+        color: #4274D3;
+font-size: 40px;
+        
+    
+        margin-bottom: 20px;
+
     }
 
+    #home h5{
+        font-size: 20px;
+        color: #4274D3;
+        margin-top: 50px ;
+        margin-bottom: 50px ;
+    }
+    
 
 }

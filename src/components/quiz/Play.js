@@ -7,7 +7,7 @@ import correctNotification from '../../assets/audio/correct-answer.mp3';
 import wrongNotification from '../../assets/audio/wrong-answer.mp3';
 import buttonSound from '../../assets/audio/button-sound.mp3';
 import classNames from 'classnames';
-
+import classes from '../../styles/components/quiz.css';
 
 class Play extends Component{
 constructor(props){
@@ -366,7 +366,7 @@ handleDisableButton = () => {
 //fin du jeu
 
 endGame = () =>{
-    alert('quiz has ended!');
+    alert('Fin du quiz ! Maintenant vous allez découvrir vos resultats !');
     const {state} = this;
     const playerStats = {
 score:state.score,
