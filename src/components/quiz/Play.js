@@ -1,4 +1,4 @@
-import React,{Component, Fragment} from 'react';
+import React,{Component, Fragment, Global , css, styled} from 'react';
 import {Helmet} from 'react-helmet';
 import M from 'materialize-css';
 import questions from '../../question.json';
@@ -7,7 +7,7 @@ import correctNotification from '../../assets/audio/correct-answer.mp3';
 import wrongNotification from '../../assets/audio/wrong-answer.mp3';
 import buttonSound from '../../assets/audio/button-sound.mp3';
 import classNames from 'classnames';
-import classes from '../../styles/components/quiz.css';
+
 
 class Play extends Component{
 constructor(props){
@@ -396,6 +396,19 @@ hintsUsed: 5 - state.hints
       
         return(
         <Fragment>
+
+<Global
+      styles={css`
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: system-ui, Verdana, Arial, sans-serif;
+      }
+    `}></Global>
+            
   <Helmet><title>Quiz page</title></Helmet>
   <Fragment>
  <audio ref={this.correctSound} src={correctNotification}></audio>

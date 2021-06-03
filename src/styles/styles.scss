@@ -1,12 +1,14 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-@import './components/quiz';
-@import'./components/quizSummary';
 @import'./base/settings.scss';
 @import'./base/base';
-@import'./components/quiz-instructions'; 
+
 @import'./components/home'; 
+@import'./components/quiz-instructions'; 
+@import './components/quiz';
+@import'./components/quizSummary';
+
 
 
 
