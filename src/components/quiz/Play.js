@@ -397,17 +397,7 @@ hintsUsed: 5 - state.hints
         return(
         <Fragment>
 
-<Global
-      styles={css`
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html {
-        font-family: system-ui, Verdana, Arial, sans-serif;
-      }
-    `}></Global>
+
             
   <Helmet><title>Quiz page</title></Helmet>
   <Fragment>
